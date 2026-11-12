@@ -1,0 +1,30 @@
+[project]
+name = "semantic-search-benchmarker"
+version = "0.1.0"
+description = "Semantic vs. BM25 search over technical docs, with chunking strategies and an IR benchmark harness"
+readme = "README.md"
+authors = [{ name = "Patience Kalanga" }]
+requires-python = ">=3.11"
+dependencies = [
+    "chromadb>=0.5",
+    "fastapi>=0.115",
+    "numpy>=1.26",
+    "openai>=1.60",
+    "pandas>=2.2",
+    "pydantic>=2.9",
+    "pytest>=8.3",
+    "pytest-asyncio>=0.24",
+    "python-dotenv>=1.0",
+    "rank-bm25>=0.2.2",
+    "streamlit>=1.40",
+    "tiktoken>=0.8",
+    "uvicorn>=0.30",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+asyncio_default_fixture_loop_scope = "function"
