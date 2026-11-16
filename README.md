@@ -2,8 +2,8 @@
 
 A search engine over the **Fastify reference documentation**. It compares **BM25 keyword search** with **dense vector search** (OpenAI `text-embedding-3-small` + ChromaDB) across **four chunking strategies**, and measures them with an automated IR benchmark: Hit Rate@K, Recall@K, MRR@K and latency.
 
-- **Live demo:** _add your Streamlit URL here_
-- **Video walkthrough:** _add your YouTube link here_
+- **Live demo:** https://semantic-search-benchmarkerbranchmain-psxbqbkugfuyv6ksp33pzp.streamlit.app
+- **Video walkthrough:** https://youtu.be/aAIr6iApzE4
 
 ## Architecture
 
